@@ -17,7 +17,7 @@ public class Application {
 
         getUserList(Users);
 
-        Users = StatusToNew(nowDays, Users);
+        Users = StatusToActive(nowDays, Users);
         Users = StatusToBLocked(nowDays, Users);
 
         getUserList(Users);
@@ -58,7 +58,7 @@ public class Application {
 
     }
 
-    public static ArrayList StatusToNew(int nowDays, ArrayList List)
+    public static ArrayList StatusToActive(int nowDays, ArrayList List)
     {
         int uday, umonth, uyear;
         int i;
